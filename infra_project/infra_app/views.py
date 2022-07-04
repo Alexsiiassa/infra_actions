@@ -10,4 +10,8 @@ def index(request):
 
 
 def second_page(request):
-    return HttpResponse(request, 'А это вторая страница')
+    text = 'А это вторая страница'
+    context = {
+        'text_repr': text,
+    }
+    return HttpResponse(request, context)
