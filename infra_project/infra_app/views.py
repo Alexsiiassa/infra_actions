@@ -2,16 +2,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    text = 'У меня получилось!'
-    context = {
-        'text_repr': text,
-    }
-    return HttpResponse(request, context)
+    return HttpResponse(request, 'У меня получилось!')
 
 
 def second_page(request):
-    text = 'А это вторая страница'
-    context = {
-        'text_repr': text,
-    }
-    return HttpResponse(request, context)
+    return HttpResponse(request, 'А это вторая страница')
