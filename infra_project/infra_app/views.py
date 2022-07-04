@@ -2,8 +2,12 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse(request, 'У меня получилось!')
+    real_count = 1
+    text_repe = 'У меня получилось!'
+    return HttpResponse(request, real_count, text_repe)
 
 
 def second_page(request):
-    return HttpResponse(request, 'А это вторая страница')
+    real_count = 1
+    text_repe = 'А это вторая страница'
+    return HttpResponse(request, real_count, text_repe)
