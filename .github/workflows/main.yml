@@ -43,6 +43,6 @@ build_and_push_to_docker_hub:
         # Пуш образа в Docker Hub 
         uses: docker/build-push-action@v2 
         with:
-          push: true
+          push: false
           tags: mackserm09/new:latest   
         
